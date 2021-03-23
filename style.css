@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.container {
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container ul {
+    display: flex;
+    border-bottom: 10px solid black;
+
+}
+
+li {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    list-style: none;
+    margin: 0px 10px;
+    border-radius: 50%;
+    animation-name: bouncingball;
+    animation-duration: 0.60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+-webkit-box-reflect: below 3px linear-gradient(transparent,rgba(0, 0, 0, 0.3));
+    
+}
+
+@keyframes bouncingball {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+ul li:nth-child(1) {
+    animation-delay: 0.2s;
+    background-color: rgb(230, 220, 91);
+}
+
+ul li:nth-child(2) {
+    animation-delay: 0.4s;
+    ;
+    background-color: rgb(158, 9, 109);
+}
+
+ul li:nth-child(3) {
+    animation-delay: 0.6s;
+    background-color: rgb(5, 190, 181);
+}
+
+ul li:nth-child(4) {
+    animation-delay: 0.8s;
+    background-color: rgb(1, 150, 26);
+}
+
+ul li:nth-child(5) {
+    animation-delay: 0.6s;
+    background-color: rgb(4, 8, 192);
+}
